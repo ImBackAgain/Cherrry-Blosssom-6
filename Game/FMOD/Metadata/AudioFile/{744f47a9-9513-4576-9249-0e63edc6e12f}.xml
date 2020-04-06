@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{744f47a9-9513-4576-9249-0e63edc6e12f}">
+		<property name="assetPath">
+			<value>Mouseover Click.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.16614512471655329</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{eccf176e-ce2c-4f4b-a4e5-47c314d47ed5}</destination>
+		</relationship>
+	</object>
+</objects>
