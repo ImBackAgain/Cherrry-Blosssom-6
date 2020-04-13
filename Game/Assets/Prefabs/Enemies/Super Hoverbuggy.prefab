@@ -14439,10 +14439,10 @@ GameObject:
   - component: {fileID: 82094088292764670}
   - component: {fileID: 114755418864449814}
   - component: {fileID: 114378502089070424}
-  - component: {fileID: 114064757355580226}
   - component: {fileID: 136866353072794800}
   - component: {fileID: 114985964367390728}
   - component: {fileID: 114211738129214050}
+  - component: {fileID: -7493035790587225341}
   m_Layer: 11
   m_Name: Super Hoverbuggy
   m_TagString: Untagged
@@ -14591,7 +14591,7 @@ MonoBehaviour:
   epicenter: {fileID: 4066970842593808}
   isMultiAttack: 0
   fireRate: 1
-  randomAudioSource: {fileID: 114064757355580226}
+  projectileAudioEvent: {fileID: 0}
   towerTargetter: {fileID: 114921850837260542}
   radiusEffectColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!82 &82094088292764670
@@ -14717,23 +14717,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialPoolCapacity: 10
---- !u!114 &114064757355580226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511114609136056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e11f03a17effc4238ba95c5b616ee02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clips:
-    weightedItems:
-    - clip: {fileID: 8300000, guid: 284169030cdb44ac5aeed3136719a521, type: 3}
-      weight: 1
-  playOnEnabled: 0
 --- !u!136 &136866353072794800
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14777,6 +14760,29 @@ MonoBehaviour:
   deathParticleSystemPrefab: {fileID: 198059975614214484, guid: 10eef6400678c4c75b2ac94e435a2bd5,
     type: 3}
   deathEffectOffset: {x: 0, y: 0.5, z: 0}
+--- !u!114 &-7493035790587225341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511114609136056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Badddies/Hoverbugggy
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 35
 --- !u!1 &1534043476352706
 GameObject:
   m_ObjectHideFlags: 0

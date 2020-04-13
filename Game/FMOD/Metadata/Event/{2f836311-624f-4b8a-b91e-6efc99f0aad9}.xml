@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{2f836311-624f-4b8a-b91e-6efc99f0aad9}">
 		<property name="name">
-			<value>LevelBGM</value>
+			<value>BGM</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{67747d6c-c501-40bd-9f60-93fe3e5805a5}</destination>
+			<destination>{baab5137-c664-4a1c-b5aa-fd7ab7590b24}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{4fd2c646-8a21-4248-8181-7a5a7059ce82}</destination>
@@ -59,18 +59,11 @@
 	<object class="EventAutomatableProperties" id="{43668042-cbf2-4284-afc3-e18fc5f7a3a9}" />
 	<object class="MarkerTrack" id="{70a8dea0-da53-45cf-bff6-a0674d45d217}" />
 	<object class="GroupTrack" id="{2174fdf4-55b1-455f-8405-e004e71c9245}">
-		<relationship name="modules">
-			<destination>{dbfa4459-4eaf-497a-82ac-8c6faf8e5f9c}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{be49756d-f47e-42b9-a55a-3911a7d9a086}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{a953d86c-5ba8-4ac1-bdcf-bbbe7355e3d7}">
-		<relationship name="modules">
-			<destination>{dbfa4459-4eaf-497a-82ac-8c6faf8e5f9c}</destination>
-		</relationship>
-	</object>
+	<object class="Timeline" id="{a953d86c-5ba8-4ac1-bdcf-bbbe7355e3d7}" />
 	<object class="EventMixerMaster" id="{c36ca413-bd02-4877-bfde-fc8deddfe38e}">
 		<relationship name="effectChain">
 			<destination>{d91f7b04-0226-4a31-9d08-19812b381d6b}</destination>
@@ -88,17 +81,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5a67a7ea-ee1c-4a9c-a5d7-9c6cdc80f429}" />
-	<object class="SingleSound" id="{dbfa4459-4eaf-497a-82ac-8c6faf8e5f9c}">
-		<property name="length">
-			<value>94.291609977324256</value>
-		</property>
-		<property name="looping">
-			<value>true</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{841e231c-4298-476f-ba19-bd55de7e5440}</destination>
-		</relationship>
-	</object>
 	<object class="EventMixerGroup" id="{be49756d-f47e-42b9-a55a-3911a7d9a086}">
 		<property name="name">
 			<value>Audio 1</value>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{5db8cf74-2df1-4d87-8bcf-b7da184945d1}">
+		<property name="name">
+			<value>TowerLevel</value>
+		</property>
+		<relationship name="folder">
+			<destination>{5cacb337-52c5-4721-b5a4-aa009985e7e6}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e203ca42-af0a-4a71-880d-26adff044875}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e203ca42-af0a-4a71-880d-26adff044875}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

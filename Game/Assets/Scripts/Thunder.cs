@@ -9,7 +9,7 @@ public class Thunder : MonoBehaviour
     float timer;
     bool inProgresss = false;
     [SerializeField] [FMODUnity.EventRef] string thunderEvent;
-    const float MAX_INTENSITY = 3.2f;
+    const float MAX_INTENSITY = 2.2f;
     Light light;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class Thunder : MonoBehaviour
 
     void HowLongTillLight()
     {
-        timer = Random.Range(5, 12f);
+        timer = Random.Range(30, 5f);
         //print(timer);
     }
 
@@ -104,10 +104,8 @@ public class Thunder : MonoBehaviour
 
         float vol = 0.5f - thunderTime; //[0, -2.5]
 
-        vol = Mathf.Exp(2*vol); //[0, something smalll but positive
+        vol = Mathf.Exp(vol); //[0, something smalll but positive
 
-
-        print(thunderTime + " " + vol);
 
         inst.setVolume(vol);
         //float d;

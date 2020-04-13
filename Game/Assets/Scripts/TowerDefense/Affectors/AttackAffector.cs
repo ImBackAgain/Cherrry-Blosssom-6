@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using ActionGameFramework.Audio;
+using FMODUnity;
 using ActionGameFramework.Health;
 using Core.Health;
 using TowerDefense.Targetting;
@@ -47,7 +48,7 @@ namespace TowerDefense.Affectors
 		/// <summary>
 		/// The audio source to play when firing
 		/// </summary>
-		public RandomAudioSource randomAudioSource;
+		public StudioEventEmitter projectileAudioEvent;
 
 		/// <summary>
 		/// Gets the targetter
@@ -125,6 +126,7 @@ namespace TowerDefense.Affectors
 		public override void Initialize(IAlignmentProvider affectorAlignment)
 		{
 			Initialize(affectorAlignment, -1);
+            projectileAudioEvent = GetComponent<StudioEventEmitter>();
 		}
 
 		/// <summary>
@@ -134,8 +136,8 @@ namespace TowerDefense.Affectors
 		{
 			base.Initialize(affectorAlignment, mask);
 			SetUpTimers();
-
-			towerTargetter.ResetTargetter();
+            projectileAudioEvent = GetComponent<StudioEventEmitter>();
+            towerTargetter.ResetTargetter();
 			towerTargetter.alignment = affectorAlignment;
 			towerTargetter.acquiredTarget += OnAcquiredTarget;
 			towerTargetter.lostTarget += OnLostTarget;
@@ -228,9 +230,9 @@ namespace TowerDefense.Affectors
 			{
 				m_Launcher.Launch(m_TrackingEnemy, damagerProjectile.gameObject, projectilePoints);
 			}
-			if (randomAudioSource != null)
+			if (projectileAudioEvent != null)
 			{
-				randomAudioSource.PlayRandomClip();
+				projectileAudioEvent.Play();
 			}
 		}
 

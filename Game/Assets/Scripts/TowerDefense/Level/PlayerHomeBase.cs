@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using ActionGameFramework.Audio;
 using Core.Health;
+using FMODUnity;
 using TowerDefense.Agents;
 using UnityEngine;
 
@@ -19,17 +20,20 @@ namespace TowerDefense.Level
 		/// <summary>
 		/// Sound to play when charge effect starts
 		/// </summary>
-		public RandomAudioSource chargeSound;
+		public StudioEventEmitter chargeSound;
+
+        /// <summary>
+        /// Sound to play when charge efffect ends and so does everything else
+        /// </summary>
+        public StudioEventEmitter atttackSound;
 		
 		/// <summary>
 		/// The particle system for an attack
 		/// </summary>
 		public ParticleSystem attackPfx;
-		
-		/// <summary>
-		/// Sound to play when attack effect starts
-		/// </summary>
-		public RandomAudioSource attackSound;
+
+        [FMODUnity.EventRef]
+        string BaseDamagedSound;
 
 		/// <summary>
 		/// The current Agents within the home base attack zone
@@ -61,9 +65,10 @@ namespace TowerDefense.Level
 			{
 				attackPfx.Play();
 			}
-			if (attackSound != null)
+			if (atttackSound != null)
 			{
-				attackSound.PlayRandomClip();
+                //attackSound.PlayRandomClip();
+                atttackSound.Play();
 			}
 		}
 		
@@ -87,7 +92,7 @@ namespace TowerDefense.Level
 			}
 			if (chargeSound != null)
 			{
-				chargeSound.PlayRandomClip();
+				chargeSound.Play();
 			}
 		}
 		

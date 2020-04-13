@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{29f31223-6ddf-49c6-a8bc-490b8d1deb35}">
+		<property name="assetPath">
+			<value>Slowdown start.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.7805442176870749</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{eccf176e-ce2c-4f4b-a4e5-47c314d47ed5}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -4816,9 +4816,9 @@ GameObject:
   - component: {fileID: 114908469238434264}
   - component: {fileID: 114193652483182726}
   - component: {fileID: 136123838071042730}
-  - component: {fileID: 114253824686066012}
   - component: {fileID: 114178181814219236}
   - component: {fileID: 114139210239060356}
+  - component: {fileID: 262195417142071391}
   m_Layer: 11
   m_Name: Super Hoverboss
   m_TagString: Untagged
@@ -4968,7 +4968,7 @@ MonoBehaviour:
   epicenter: {fileID: 4527377347391372}
   isMultiAttack: 0
   fireRate: 1
-  randomAudioSource: {fileID: 114253824686066012}
+  projectileAudioEvent: {fileID: 0}
   towerTargetter: {fileID: 114560507477559634}
   radiusEffectColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!82 &82428518445736458
@@ -5108,23 +5108,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &114253824686066012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1300474929184216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e11f03a17effc4238ba95c5b616ee02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clips:
-    weightedItems:
-    - clip: {fileID: 8300000, guid: 284169030cdb44ac5aeed3136719a521, type: 3}
-      weight: 1
-  playOnEnabled: 0
 --- !u!114 &114178181814219236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5154,6 +5137,29 @@ MonoBehaviour:
   deathParticleSystemPrefab: {fileID: 198059975614214484, guid: 42a3690e5d4a841ad958c0e3b9b7b19e,
     type: 3}
   deathEffectOffset: {x: 0, y: 1.5, z: 0}
+--- !u!114 &262195417142071391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300474929184216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Badddies/Hovertank
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 35
 --- !u!1 &1341545582985454
 GameObject:
   m_ObjectHideFlags: 0

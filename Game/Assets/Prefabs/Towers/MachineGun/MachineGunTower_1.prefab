@@ -28696,6 +28696,7 @@ GameObject:
   - component: {fileID: 4217891892028684}
   - component: {fileID: 114296364983185296}
   - component: {fileID: 114569419341490114}
+  - component: {fileID: 5132924136168002171}
   m_Layer: 10
   m_Name: Affector
   m_TagString: Untagged
@@ -28749,9 +28750,32 @@ MonoBehaviour:
   epicenter: {fileID: 4187985146200546}
   isMultiAttack: 0
   fireRate: 6
-  randomAudioSource: {fileID: 114412975896621836}
+  projectileAudioEvent: {fileID: 0}
   towerTargetter: {fileID: 114831088907122518}
   radiusEffectColor: {r: 0, g: 1, b: 1, a: 0.09803922}
+--- !u!114 &5132924136168002171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767268912863362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Towers themselves/Cannnonfire
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 35
 --- !u!1 &1823473106924508
 GameObject:
   m_ObjectHideFlags: 0
