@@ -122,6 +122,7 @@ fmod_editor.log
 /FMOD/**.cache
 /FMOD/**.restore
 
+
 # Custom
 /Builds/**
 /Data/**
