@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9057036734852846056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637227224708165595
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7266752758759459812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +33,8 @@ MonoBehaviour:
   Path: event:/Level background/Thunder
   guid: 771616210b9e5548bc67cd30628d7310
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -23,6 +42,40 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3212
+--- !u!114 &-6829863419401329737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 4
+  Default: 1
+  Exists: 0
+--- !u!114 &-6318634349769998943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 4
+  Default: 1
+  Exists: 1
 --- !u!114 &-6293249673254030372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,7 +91,8 @@ MonoBehaviour:
   Path: event:/Badddies/Hoverbugggy
   guid: 4cdbe8d69fb62b459786bab9cde779b6
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -61,7 +115,8 @@ MonoBehaviour:
   Path: event:/Badddies/Hovercopter
   guid: 404236c0c2540a43a8329aa2df0be3f1
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -84,15 +139,34 @@ MonoBehaviour:
   Path: event:/Level background/LevelAmbience
   guid: cc0a18f289e86a43a85fc171207c1e84
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 2386383921807205477}
+  - {fileID: 8343452662108736703}
   MinDistance: 0
   MaxDistance: 0
   Length: 30000
+--- !u!114 &-3775715349883741259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637227223380731768
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-3212718814797037675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,7 +182,8 @@ MonoBehaviour:
   Path: event:/Towers themselves/RocketFire
   guid: d6afd9ef0b41a4498dd61f3e916a9fa3
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -131,12 +206,13 @@ MonoBehaviour:
   Path: event:/Level background/LevelBackground
   guid: bd90c55da9d1be41b20c53d09d5dab09
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 8829268661910643124}
+  - {fileID: -2627834434241603829}
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
@@ -157,6 +233,40 @@ MonoBehaviour:
   Max: 4
   Default: 1
   Exists: 1
+--- !u!114 &-2631677038364220571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 0
+--- !u!114 &-2627834434241603829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 1
 --- !u!114 &-2576261193443120524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +282,8 @@ MonoBehaviour:
   Path: event:/UI/BackButtton
   guid: 6e64004a1b5a0c42a55bfa8fc81613d9
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -195,7 +306,8 @@ MonoBehaviour:
   Path: event:/UI/StartWave
   guid: 1e84095c94566842a7f4cd1d274ada49
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -217,12 +329,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637223811032966539
+  lastModified: 637227229233781317
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 2462
+    Value: 2508
   Exists: 1
+--- !u!114 &-1689407448412507026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 0
 --- !u!114 &-1462826008357583992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,14 +367,33 @@ MonoBehaviour:
   Path: event:/Badddies/Mired
   guid: 703d6a2d96ecc54da71164c8077126ba
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 5
   MaxDistance: 35
-  Length: 7284
+  Length: 3041
+--- !u!114 &-1402951180292117200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637227219408100999
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1118472994791065948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,7 +409,8 @@ MonoBehaviour:
   Path: event:/Alll your base/EnemyChargeAtBase
   guid: 99875dd72bbb5649adbecbd691c0f25a
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -284,7 +433,8 @@ MonoBehaviour:
   Path: event:/LevelUI/TowerPlaced
   guid: d7ec4c438c9c2f4ba7c0fff67fc5ec81
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -307,7 +457,8 @@ MonoBehaviour:
   Path: event:/Towers themselves/PylonDidAThing
   guid: 2c6ad110b2631147ac660a924d9fd5fc
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -315,6 +466,23 @@ MonoBehaviour:
   MinDistance: 5
   MaxDistance: 35
   Length: 0
+--- !u!114 &-308699406938629990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 4
+  Default: 1
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,7 +497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -1843833122722250698}
-  - {fileID: 8178444597935423983}
+  - {fileID: 508572968455326694}
   EditorEvents:
   - {fileID: 5999251963289808010}
   - {fileID: 3322459455705036855}
@@ -361,10 +529,10 @@ MonoBehaviour:
   - {fileID: 5299990887424838105}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8178444597935423983}
+  - {fileID: 508572968455326694}
   StringsBanks:
   - {fileID: -1843833122722250698}
-  stringsBankWriteTime: 637223811032966539
+  stringsBankWriteTime: 637227229233781317
   cacheVersion: 3
 --- !u!114 &19468156957104638
 MonoBehaviour:
@@ -381,7 +549,8 @@ MonoBehaviour:
   Path: event:/LevelUI/TowerUpgraded
   guid: d406bc0ed3a01d44bb40f9b84e1baacc
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -389,6 +558,24 @@ MonoBehaviour:
   MinDistance: 5
   MaxDistance: 35
   Length: 0
+--- !u!114 &508572968455326694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637227229233661659
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &513310836316879107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,7 +591,8 @@ MonoBehaviour:
   Path: event:/Towers themselves/PlasmaShot
   guid: 6baec996a7380c46a6241750a04a59da
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -427,7 +615,8 @@ MonoBehaviour:
   Path: event:/Alll your base/BaseHit
   guid: f1f4466ed147c94ca34555614eac803a
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -450,7 +639,8 @@ MonoBehaviour:
   Path: event:/Badddies/Hovertank
   guid: 3c33f4872192844da847fa51409cd90d
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -473,7 +663,8 @@ MonoBehaviour:
   Path: event:/UI/Mouseover
   guid: a0beaef9e8d2624f9ea3a6e52aa2a700
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -513,7 +704,8 @@ MonoBehaviour:
   Path: event:/Alll your base/BaseDanger
   guid: 398585ab0adbff43903d5b1029d7d87d
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -521,6 +713,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3242478344013692392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 1
 --- !u!114 &3322459455705036855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,12 +745,13 @@ MonoBehaviour:
   Path: event:/Towers themselves/TowerIdle
   guid: 1b0c35f14cdc014f8f7651f1a054a678
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -2660022817212082696}
+  - {fileID: -308699406938629990}
   MinDistance: 5
   MaxDistance: 35
   Length: 0
@@ -560,7 +770,8 @@ MonoBehaviour:
   Path: event:/UI/MouseClick
   guid: 66dff8c4531b724b9fa1642731435d7d
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -583,7 +794,8 @@ MonoBehaviour:
   Path: event:/Towers themselves/RocketImpact
   guid: de573a5715f84e429a604e09a535d1d7
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -606,7 +818,8 @@ MonoBehaviour:
   Path: event:/LevelUI/TowerSold
   guid: 36e5c51b68ce8a4a94583a883e7df177
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -629,7 +842,8 @@ MonoBehaviour:
   Path: event:/Towers themselves/IndexOutOfBounds
   guid: f4f3788ca0de60478e15caa44a6efec2
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -637,6 +851,40 @@ MonoBehaviour:
   MinDistance: 5
   MaxDistance: 35
   Length: 0
+--- !u!114 &5313284819960489960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 4
+  Default: 1
+  Exists: 0
+--- !u!114 &5525111202631226271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 1
 --- !u!114 &5999251963289808010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,7 +900,8 @@ MonoBehaviour:
   Path: event:/Level background/BGM
   guid: 1163832f4f628a4bb91e6efc99f0aad9
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -675,7 +924,8 @@ MonoBehaviour:
   Path: event:/LevelUI/EnergyGain
   guid: 37c69c0069876f45b659c914ed81748e
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -698,7 +948,8 @@ MonoBehaviour:
   Path: event:/Towers themselves/Cannnonfire
   guid: 9e405f935cf62d4eb239a2ba4331909f
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -706,6 +957,23 @@ MonoBehaviour:
   MinDistance: 5
   MaxDistance: 35
   Length: 300
+--- !u!114 &8174256329797785383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 0
 --- !u!114 &8178444597935423983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,6 +991,40 @@ MonoBehaviour:
   lastModified: 637223811032757047
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &8288797354915338854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 9
+  Default: 0
+  Exists: 0
+--- !u!114 &8343452662108736703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 9
+  Default: 0
   Exists: 1
 --- !u!114 &8398765209311611103
 MonoBehaviour:
@@ -739,7 +1041,8 @@ MonoBehaviour:
   Path: event:/Alll your base/BaseAmbience
   guid: 70077dba903c404ba69f8a97898c6c44
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -762,7 +1065,8 @@ MonoBehaviour:
   Path: event:/Towers themselves/TowerHit
   guid: 407bf299b076874d89268f997751fe7a
   Banks:
-  - {fileID: 8178444597935423983}
+  - {fileID: -1402951180292117200}
+  - {fileID: 508572968455326694}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
