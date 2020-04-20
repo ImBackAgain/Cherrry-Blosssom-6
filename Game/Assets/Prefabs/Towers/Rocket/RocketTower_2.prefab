@@ -197,6 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4813242976394130}
   - component: {fileID: 114118926641790654}
+  - component: {fileID: 8511395557294143302}
   m_Layer: 10
   m_Name: RocketTower_2
   m_TagString: Untagged
@@ -239,6 +240,29 @@ MonoBehaviour:
   buildEffectPrefab: {fileID: 1395313577031670, guid: c559c1920b5d04e6d83aa4464fba5c68,
     type: 3}
   levelData: {fileID: 11400000, guid: b663c24c5aafb42b5bea169fd2b54da1, type: 2}
+--- !u!114 &8511395557294143302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139903933978922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Towers themselves/TowerIdle
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1.8000001
+  OverrideMaxDistance: 50
 --- !u!1 &1160085974400402
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +571,7 @@ MonoBehaviour:
   epicenter: {fileID: 4813242976394130}
   isMultiAttack: 0
   fireRate: 0.8
-  randomAudioSource: {fileID: 114604032630073014}
+  projectileAudioEvent: {fileID: 0}
   towerTargetter: {fileID: 114722832402335634}
   radiusEffectColor: {r: 0, g: 1, b: 1, a: 0.09803922}
 --- !u!82 &82834968977548846

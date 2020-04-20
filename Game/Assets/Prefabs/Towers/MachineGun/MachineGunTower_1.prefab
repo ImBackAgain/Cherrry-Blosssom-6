@@ -14394,6 +14394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4187985146200546}
   - component: {fileID: 114056922861069036}
+  - component: {fileID: 2840941527330297241}
   m_Layer: 10
   m_Name: MachineGunTower_1
   m_TagString: Untagged
@@ -14436,6 +14437,29 @@ MonoBehaviour:
   buildEffectPrefab: {fileID: 1395313577031670, guid: c559c1920b5d04e6d83aa4464fba5c68,
     type: 3}
   levelData: {fileID: 11400000, guid: 15d47f5f935234d87a2eef876576efab, type: 2}
+--- !u!114 &2840941527330297241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498458980781738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Towers themselves/TowerIdle
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1.8000001
+  OverrideMaxDistance: 50
 --- !u!1 &1609779835602160
 GameObject:
   m_ObjectHideFlags: 0

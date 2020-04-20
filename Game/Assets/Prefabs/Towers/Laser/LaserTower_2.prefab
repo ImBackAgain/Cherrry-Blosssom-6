@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4444266055056824}
   - component: {fileID: 114202750766260440}
   - component: {fileID: 114856504178369868}
+  - component: {fileID: 5243164970867269071}
   m_Layer: 10
   m_Name: Affector
   m_TagString: Untagged
@@ -64,9 +65,32 @@ MonoBehaviour:
   epicenter: {fileID: 4212591820432442}
   isMultiAttack: 0
   fireRate: 0.4
-  randomAudioSource: {fileID: 114909306659620118}
+  projectileAudioEvent: {fileID: 5243164970867269071}
   towerTargetter: {fileID: 114127674745810710}
   radiusEffectColor: {r: 0, g: 1, b: 1, a: 0.09803922}
+--- !u!114 &5243164970867269071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056724386012034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Towers themselves/PlasmaShot
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 20
 --- !u!1 &1098962820537336
 GameObject:
   m_ObjectHideFlags: 0
@@ -38165,6 +38189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4212591820432442}
   - component: {fileID: 114893434427387590}
+  - component: {fileID: -4407933109178763717}
   m_Layer: 10
   m_Name: LaserTower_2
   m_TagString: Untagged
@@ -38207,6 +38232,29 @@ MonoBehaviour:
   buildEffectPrefab: {fileID: 1395313577031670, guid: c559c1920b5d04e6d83aa4464fba5c68,
     type: 3}
   levelData: {fileID: 11400000, guid: 12994b0db6ab24a5caf6123d0d999972, type: 2}
+--- !u!114 &-4407933109178763717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914174764191150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Towers themselves/TowerIdle
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1.8000001
+  OverrideMaxDistance: 50
 --- !u!1 &1956956092625802
 GameObject:
   m_ObjectHideFlags: 0

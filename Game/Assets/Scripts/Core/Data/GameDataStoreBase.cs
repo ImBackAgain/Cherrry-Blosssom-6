@@ -11,6 +11,8 @@
 
 		public float musicVolume = 1;
 
+        public float ambiVolume = 1;
+
 		/// <summary>
 		/// Called just before we save
 		/// </summary>

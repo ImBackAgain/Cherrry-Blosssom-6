@@ -26,7 +26,12 @@ namespace TowerDefense.Level
         /// Sound to play when charge efffect ends and so does everything else
         /// </summary>
         public StudioEventEmitter atttackSound;
-		
+
+
+        public StudioEventEmitter bgm;
+        FMOD.Studio.EventInstance inst;
+        FMOD.Studio.PARAMETER_ID healthId;
+
 		/// <summary>
 		/// The particle system for an attack
 		/// </summary>
@@ -46,6 +51,8 @@ namespace TowerDefense.Level
 		protected virtual void Start()
 		{
 			configuration.damaged += OnDamaged;
+            inst = bgm.EventInstance;
+            healthId = Bleh.GetIdFromEvent(bgm.Event, "Health");
 		}
 
 		/// <summary>
@@ -70,6 +77,8 @@ namespace TowerDefense.Level
                 //attackSound.PlayRandomClip();
                 atttackSound.Play();
 			}
+            float h = configuration.currentHealth * 10f / configuration.maxHealth;
+            inst.setParameterByID(healthId, h);
 		}
 		
 		/// <summary>

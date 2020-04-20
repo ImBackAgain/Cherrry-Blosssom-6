@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{d061783d-4828-48c3-8550-938eef128bac}">
+		<property name="assetPath">
+			<value>Tank looop.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.3163265306122449</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{eccf176e-ce2c-4f4b-a4e5-47c314d47ed5}</destination>
+		</relationship>
+	</object>
+</objects>

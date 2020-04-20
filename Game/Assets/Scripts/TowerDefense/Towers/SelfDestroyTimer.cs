@@ -9,6 +9,7 @@ namespace TowerDefense.Towers
 	/// </summary>
 	public class SelfDestroyTimer : MonoBehaviour
 	{
+        FMODUnity.StudioEventEmitter e;
 		/// <summary>
 		/// The time before destruction
 		/// </summary>
@@ -24,10 +25,15 @@ namespace TowerDefense.Towers
 		/// </summary>
 		public UnityEvent death;
 
-		/// <summary>
-		/// Potentially initialize the time if necessary
-		/// </summary>
-		protected virtual void OnEnable()
+        private void Start()
+        {
+            e = GetComponent<FMODUnity.StudioEventEmitter>();
+        }
+
+        /// <summary>
+        /// Potentially initialize the time if necessary
+        /// </summary>
+        protected virtual void OnEnable()
 		{
 			if (timer == null)
 			{
@@ -56,6 +62,7 @@ namespace TowerDefense.Towers
 		/// </summary>
 		protected virtual void OnTimeEnd()
 		{
+            e?.Play();
 			death.Invoke();
 			Poolable.TryPool(gameObject);
 			timer.Reset();

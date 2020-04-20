@@ -2,6 +2,8 @@
 using Core.Utilities;
 using UnityEngine;
 using UnityEngine.Audio;
+using FMOD.Studio;
+using FMODUnity;
 
 namespace Core.Data
 {
@@ -12,6 +14,9 @@ namespace Core.Data
 		where TDataStore : GameDataStoreBase, new()
 		where TGameManager : GameManagerBase<TGameManager, TDataStore>
 	{
+        Bus masterBus;
+        VCA musicVCA, sfxVCA, ambienceVCA;
+        string masterString = "Bus:/", musicString = "VCA:/Music", sfxString = "VCA:/SFX", ambienceString = "VCA:/Ambience";
 		/// <summary>
 		/// File name of saved game
 		/// </summary>
@@ -60,7 +65,7 @@ namespace Core.Data
 		/// <summary>
 		/// Set and persist game volumes
 		/// </summary>
-		public virtual void SetVolumes(float master, float sfx, float music, bool save)
+		public virtual void SetVolumes(float master, float sfx, float music, float ambi, bool save)
 		{
 			// Early out if no mixer set
 			if (gameMixer == null)
@@ -99,6 +104,11 @@ namespace Core.Data
 		{
 			base.Awake();
 			LoadData();
+
+            masterBus = RuntimeManager.GetBus(masterString);
+            sfxVCA = RuntimeManager.GetVCA(sfxString);
+            musicVCA = RuntimeManager.GetVCA(musicString);
+            ambienceVCA = RuntimeManager.GetVCA(ambienceString);
 		}
 
 		/// <summary>
@@ -106,7 +116,7 @@ namespace Core.Data
 		/// </summary>
 		protected virtual void Start()
 		{
-			SetVolumes(m_DataStore.masterVolume, m_DataStore.sfxVolume, m_DataStore.musicVolume, false);
+			SetVolumes(m_DataStore.masterVolume, m_DataStore.sfxVolume, m_DataStore.musicVolume, m_DataStore.ambiVolume, false);
 		}
 
 		/// <summary>

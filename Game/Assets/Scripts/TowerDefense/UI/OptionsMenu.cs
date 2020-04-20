@@ -15,17 +15,19 @@ namespace TowerDefense.UI
 		
 		public Slider musicSlider;
 
+        public Slider ambiSlider;
+
 		/// <summary>
 		/// Event fired when sliders change
 		/// </summary>
 		public void UpdateVolumes()
 		{
-			float masterVolume, sfxVolume, musicVolume;
-			GetSliderVolumes(out masterVolume, out sfxVolume, out musicVolume);
+			float masterVolume, sfxVolume, musicVolume, ambiVolume;
+			GetSliderVolumes(out masterVolume, out sfxVolume, out musicVolume, out ambiVolume);
 
 			if (GameManager.instanceExists)
 			{
-				GameManager.instance.SetVolumes(masterVolume, sfxVolume, musicVolume, false);
+				GameManager.instance.SetVolumes(masterVolume, sfxVolume, musicVolume, ambiVolume, false);
 			}
 		}
 
@@ -61,12 +63,12 @@ namespace TowerDefense.UI
 		/// </summary>
 		public override void Hide()
 		{
-			float masterVolume, sfxVolume, musicVolume;
-			GetSliderVolumes(out masterVolume, out sfxVolume, out musicVolume);
+			float masterVolume, sfxVolume, musicVolume, ambiVolume;
+			GetSliderVolumes(out masterVolume, out sfxVolume, out musicVolume, out ambiVolume);
 
 			if (GameManager.instanceExists)
 			{
-				GameManager.instance.SetVolumes(masterVolume, sfxVolume, musicVolume, true);
+				GameManager.instance.SetVolumes(masterVolume, sfxVolume, musicVolume, ambiVolume, true);
 			}
 
 			base.Hide();
@@ -75,11 +77,12 @@ namespace TowerDefense.UI
 		/// <summary>
 		/// Retrieve values from sliders
 		/// </summary>
-		void GetSliderVolumes(out float masterVolume, out float sfxVolume, out float musicVolume)
+		void GetSliderVolumes(out float masterVolume, out float sfxVolume, out float musicVolume, out float ambiVolume)
 		{
 			masterVolume = masterSlider != null ? masterSlider.value : 1;
 			sfxVolume = sfxSlider != null ? sfxSlider.value : 1;
 			musicVolume = musicSlider != null ? musicSlider.value : 1;
+            ambiVolume = ambiSlider != null ? ambiSlider.value : 1;
 		}
 	}
 }

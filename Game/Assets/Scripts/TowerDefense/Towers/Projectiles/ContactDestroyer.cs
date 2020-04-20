@@ -8,6 +8,8 @@ namespace TowerDefense.Towers.Projectiles
 	/// </summary>
 	public class ContactDestroyer : MonoBehaviour
 	{
+        FMODUnity.StudioEventEmitter e;
+
 		/// <summary>
 		/// The y-value of the position the object will destroy itself
 		/// </summary>
@@ -23,6 +25,7 @@ namespace TowerDefense.Towers.Projectiles
 		/// </summary>
 		protected virtual void Awake()
 		{
+            e = GetComponent<FMODUnity.StudioEventEmitter>();
 			m_AttachedCollider = GetComponent<Collider>();
 		}
 
@@ -39,6 +42,7 @@ namespace TowerDefense.Towers.Projectiles
 
 		void OnCollisionEnter(Collision other)
 		{
+            e?.Play();
 			ReturnToPool();
 		}
 

@@ -5,7 +5,7 @@
 			<value>LevelBackground</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>5</value>
 		</property>
 		<relationship name="folder">
 			<destination>{baab5137-c664-4a1c-b5aa-fd7ab7590b24}</destination>
@@ -105,13 +105,17 @@
 		<property name="length">
 			<value>2</value>
 		</property>
+		<relationship name="parameters">
+			<destination>{b1ef1066-cce0-4262-a42c-70802f7615e7}</destination>
+			<destination>{c9d0066b-76f6-4e1d-8259-b44bc7c8c437}</destination>
+		</relationship>
 		<relationship name="event">
 			<destination>{2f836311-624f-4b8a-b91e-6efc99f0aad9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d200f426-d80d-4d9e-9b28-2de02a0ddbee}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>BGM</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{7b640b6c-d920-456d-8d27-53ddb33fd139}</destination>
@@ -136,7 +140,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{23a78b75-36dc-4d94-8aa2-fb74dd77abd4}">
 		<property name="name">
-			<value>Audio 2</value>
+			<value>Amb</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{c26929fa-fd32-4cdb-b608-38e748cb181a}</destination>
@@ -169,6 +173,16 @@
 	</object>
 	<object class="MixerBusPanner" id="{403ded94-8b28-4b49-83af-63623eccba40}" />
 	<object class="MixerBusFader" id="{d6d1b544-1960-40e7-b933-cdbaa14e9e0d}" />
+	<object class="ParameterProperty" id="{b1ef1066-cce0-4262-a42c-70802f7615e7}">
+		<relationship name="parameter">
+			<destination>{3d92e1d3-762a-4190-b363-a80f0d49820e}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProperty" id="{c9d0066b-76f6-4e1d-8259-b44bc7c8c437}">
+		<relationship name="parameter">
+			<destination>{20ebdc0b-3d8c-4538-a75f-961b0cfdf907}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{7b640b6c-d920-456d-8d27-53ddb33fd139}">
 		<relationship name="effects">
 			<destination>{b8dcd0be-b94b-4677-afbc-cade6b845f7a}</destination>
