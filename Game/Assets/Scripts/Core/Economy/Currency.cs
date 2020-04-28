@@ -1,4 +1,6 @@
 ﻿using System;
+using FMODUnity;
+using FMOD.Studio;
 
 namespace Core.Economy
 {
@@ -24,6 +26,8 @@ namespace Core.Economy
 		{
 			ChangeCurrency(startingCurrency);
 		}
+
+        const string CURRRENCY_GAIN_EVENT = "event:/LevelUI/EnegyGain";
 
 		/// <summary>
 		/// Adds the currency.

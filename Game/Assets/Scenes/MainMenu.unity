@@ -1332,7 +1332,7 @@ MonoBehaviour:
   masterSlider: {fileID: 212595079}
   sfxSlider: {fileID: 665178609}
   musicSlider: {fileID: 651835929}
-  ambiSlider: {fileID: 0}
+  ambiSlider: {fileID: 26992347}
 --- !u!1 &212595077
 GameObject:
   m_ObjectHideFlags: 0
@@ -32148,6 +32148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 993965173}
   - component: {fileID: 993965172}
+  - component: {fileID: 993965174}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -32229,6 +32230,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 47.333004, y: -125.467, z: -160.485}
+--- !u!114 &993965174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993965171}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Level background/LevelAmbience
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 40
 --- !u!1 &994907339
 GameObject:
   m_ObjectHideFlags: 0
@@ -72047,7 +72071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -90}
+  m_AnchoredPosition: {x: 0, y: -116}
   m_SizeDelta: {x: 0, y: -180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1648757506

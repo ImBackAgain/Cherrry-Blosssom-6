@@ -92,6 +92,7 @@ namespace TowerDefense.Towers.TowerLaunchers
 		/// </summary>
 		protected virtual void OnEnable()
 		{
+            //print(sep.Event);
 			if (!LevelManager.instanceExists)
 			{
 				return;
@@ -100,6 +101,7 @@ namespace TowerDefense.Towers.TowerLaunchers
 			if (currentState == LevelState.SpawningEnemies || currentState == LevelState.AllEnemiesSpawned)
 			{
 				m_LifeTimer = new Timer(towerLifeSpan, OnLifeTimerElapsed);
+                played = false;
 			}
 			else
 			{
@@ -118,6 +120,9 @@ namespace TowerDefense.Towers.TowerLaunchers
 			}
 		}
 
+        [SerializeField] FMODUnity.StudioEventEmitter sep;
+        [SerializeField] bool played = false;
+
 		/// <summary>
 		/// Tick the timer
 		/// </summary>
@@ -128,6 +133,13 @@ namespace TowerDefense.Towers.TowerLaunchers
 				return;
 			}
 			m_LifeTimer.Tick(Time.deltaTime);
+            if(!played && m_LifeTimer.TimeLeft < 2)
+            {
+                print(m_LifeTimer.TimeLeft);
+                played = true;
+                sep?.Play();
+                print("playing now");
+            }
 		}
 
 		/// <summary>

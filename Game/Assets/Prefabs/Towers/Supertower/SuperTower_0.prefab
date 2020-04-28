@@ -126,7 +126,6 @@ GameObject:
   - component: {fileID: 114743196559775712}
   - component: {fileID: 114572087305174366}
   - component: {fileID: 82063799700527262}
-  - component: {fileID: 114770334943067832}
   m_Layer: 10
   m_Name: Affector
   m_TagString: Untagged
@@ -177,6 +176,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  sep: {fileID: 2915831091359183161}
+  played: 0
 --- !u!114 &114572087305174366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,35 +301,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &114770334943067832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1197411263669442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e11f03a17effc4238ba95c5b616ee02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clips:
-    weightedItems:
-    - clip: {fileID: 8300000, guid: ad00705ac426345289f10c69b726d683, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: bfc83a94c61ea44ccb7a2470d50b5f10, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: dad118443943d4d31be3a3edb4bb9785, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 02f0cc81719d043e3876b7b6ecdd1566, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 5ae744e8eed7a400b9acdf6d118e7323, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 9844909eb36d64f4eb7125edf616a3ae, type: 3}
-      weight: 1
-    - clip: {fileID: 8300000, guid: 83f515b3e0b9d48f2867c08c49b787f4, type: 3}
-      weight: 1
-  playOnEnabled: 0
 --- !u!1 &1293292849323766
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +312,7 @@ GameObject:
   - component: {fileID: 4077699854114446}
   - component: {fileID: 33449366773859118}
   - component: {fileID: 23907703121831592}
+  - component: {fileID: 2915831091359183161}
   m_Layer: 10
   m_Name: SuperTower_Base
   m_TagString: Untagged
@@ -408,6 +381,29 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2915831091359183161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293292849323766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Towers themselves/IndexOutOfBounds
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 35
 --- !u!1 &1305974032203548
 GameObject:
   m_ObjectHideFlags: 0

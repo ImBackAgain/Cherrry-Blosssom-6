@@ -38,8 +38,8 @@ namespace TowerDefense.UI
 		{
 			if (GameManager.instanceExists)
 			{
-				float master, sfx, music;
-				GameManager.instance.GetVolumes(out master, out sfx, out music);
+				float master, sfx, music, ambi;
+				GameManager.instance.GetVolumes(out master, out sfx, out music, out ambi);
 
 				if (masterSlider != null)
 				{
@@ -53,6 +53,10 @@ namespace TowerDefense.UI
 				{
 					musicSlider.value = music;
 				}
+                if (ambiSlider != null)
+                {
+                    ambiSlider.value = ambi;
+                }
 			}
 
 			base.Show();

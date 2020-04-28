@@ -93,7 +93,7 @@
 	<object class="MixerBusPanner" id="{97047b5e-f99a-431c-aa8f-4fb71218ab3e}" />
 	<object class="SingleSound" id="{fb6713e5-ee47-4349-bdc3-cb321072382b}">
 		<property name="length">
-			<value>1.6963945578231292</value>
+			<value>1.6413151927437641</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{4f718c72-a4cc-4f26-a624-82693b3e45f5}</destination>
@@ -133,7 +133,7 @@
 			<value>5</value>
 		</property>
 		<property name="maximumDistance">
-			<value>35</value>
+			<value>60</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{1e1a059f-97a3-46b5-b768-dec4a9e11783}" />

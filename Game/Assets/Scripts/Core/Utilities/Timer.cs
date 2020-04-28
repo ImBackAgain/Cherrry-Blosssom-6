@@ -13,6 +13,14 @@ namespace Core.Utilities
 		/// </summary>
 		readonly Action m_Callback;
 
+        public float TimeLeft
+        {
+            get
+            {
+                return m_Time - m_CurrentTime;
+            }
+        }
+
 		/// <summary>
 		/// The time
 		/// </summary>

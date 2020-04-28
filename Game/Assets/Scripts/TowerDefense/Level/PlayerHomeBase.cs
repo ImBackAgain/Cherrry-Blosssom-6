@@ -29,13 +29,18 @@ namespace TowerDefense.Level
 
 
         public StudioEventEmitter bgm;
-        FMOD.Studio.EventInstance inst;
-        FMOD.Studio.PARAMETER_ID healthId;
+        FMOD.Studio.EventInstance bgmInst;
+        FMOD.Studio.PARAMETER_ID bgmHealthId;
 
-		/// <summary>
-		/// The particle system for an attack
-		/// </summary>
-		public ParticleSystem attackPfx;
+
+        public StudioEventEmitter baseAmb;
+        FMOD.Studio.EventInstance baseInst;
+        FMOD.Studio.PARAMETER_ID baseAmbHealthId;
+
+        /// <summary>
+        /// The particle system for an attack
+        /// </summary>
+        public ParticleSystem attackPfx;
 
         [FMODUnity.EventRef]
         string BaseDamagedSound;
@@ -51,8 +56,12 @@ namespace TowerDefense.Level
 		protected virtual void Start()
 		{
 			configuration.damaged += OnDamaged;
-            inst = bgm.EventInstance;
-            healthId = Bleh.GetIdFromEvent(bgm.Event, "Health");
+
+            bgmInst = bgm.EventInstance;
+            bgmHealthId = Bleh.GetIdFromEvent(bgm.Event, "Health");
+
+            baseInst = baseAmb.EventInstance;
+            baseAmbHealthId = Bleh.GetIdFromEvent(baseAmb.Event, "Health");
 		}
 
 		/// <summary>
@@ -78,7 +87,9 @@ namespace TowerDefense.Level
                 atttackSound.Play();
 			}
             float h = configuration.currentHealth * 10f / configuration.maxHealth;
-            inst.setParameterByID(healthId, h);
+
+            bgmInst.setParameterByID(bgmHealthId, h);
+            baseInst.setParameterByID(baseAmbHealthId, h);
 		}
 		
 		/// <summary>

@@ -16,7 +16,7 @@ namespace Core.Data
 	{
         Bus masterBus;
         VCA musicVCA, sfxVCA, ambienceVCA;
-        string masterString = "Bus:/", musicString = "VCA:/Music", sfxString = "VCA:/SFX", ambienceString = "VCA:/Ambience";
+        string masterString = "Bus:/", musicString = "vca:/Music", sfxString = "vca:/SFX", ambienceString = "vca:/Ambience";
 		/// <summary>
 		/// File name of saved game
 		/// </summary>
@@ -55,11 +55,12 @@ namespace Core.Data
 		/// <summary>
 		/// Retrieve volumes from data store
 		/// </summary>
-		public virtual void GetVolumes(out float master, out float sfx, out float music)
+		public virtual void GetVolumes(out float master, out float sfx, out float music, out float ambi)
 		{
 			master = m_DataStore.masterVolume;
 			sfx = m_DataStore.sfxVolume;
 			music = m_DataStore.musicVolume;
+            ambi = m_DataStore.ambiVolume;
 		}
 
 		/// <summary>
@@ -68,24 +69,29 @@ namespace Core.Data
 		public virtual void SetVolumes(float master, float sfx, float music, float ambi, bool save)
 		{
 			// Early out if no mixer set
-			if (gameMixer == null)
-			{
-				return;
-			}
-			
-			// Transform 0-1 into logarithmic -80-0
-			if (masterVolumeParameter != null)
-			{
-				gameMixer.SetFloat(masterVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(master)));
-			}
-			if (sfxVolumeParameter != null)
-			{
-				gameMixer.SetFloat(sfxVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(sfx)));
-			}
-			if (musicVolumeParameter != null)
-			{
-				gameMixer.SetFloat(musicVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(music)));
-			}
+			//if (gameMixer == null)
+			//{
+			//	return;
+			//}
+
+            // Transform 0-1 into logarithmic -80-0
+            //if (masterVolumeParameter != null)
+            //{
+            //	gameMixer.SetFloat(masterVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(master)));
+            //}
+            //if (sfxVolumeParameter != null)
+            //{
+            //	gameMixer.SetFloat(sfxVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(sfx)));
+            //}
+            //if (musicVolumeParameter != null)
+            //{
+            //	gameMixer.SetFloat(musicVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(music)));
+            //}
+
+            masterBus.setVolume(master);
+            sfxVCA.setVolume(sfx);
+            musicVCA.setVolume(music);
+            ambienceVCA.setVolume(master);
 
 			if (save)
 			{
@@ -116,7 +122,14 @@ namespace Core.Data
 		/// </summary>
 		protected virtual void Start()
 		{
-			SetVolumes(m_DataStore.masterVolume, m_DataStore.sfxVolume, m_DataStore.musicVolume, m_DataStore.ambiVolume, false);
+            float x;
+            musicVCA.getVolume(out x);
+            //print(x);
+
+            masterBus.getVolume(out x);
+            //print(x);
+
+            SetVolumes(m_DataStore.masterVolume, m_DataStore.sfxVolume, m_DataStore.musicVolume, m_DataStore.ambiVolume, false);
 		}
 
 		/// <summary>
