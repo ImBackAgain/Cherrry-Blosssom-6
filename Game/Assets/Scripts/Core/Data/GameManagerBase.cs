@@ -15,8 +15,10 @@ namespace Core.Data
 		where TGameManager : GameManagerBase<TGameManager, TDataStore>
 	{
         Bus masterBus;
-        VCA musicVCA, sfxVCA, ambienceVCA;
-        string masterString = "Bus:/", musicString = "vca:/Music", sfxString = "vca:/SFX", ambienceString = "vca:/Ambience";
+        VCA musicVCA, sfxVCA, ambiVCA;
+        const string masterBusName = "Bus:/", musicVcaName = "vca:/Music", sfxVcaName = "vca:/SFX", ambiVcaName = "vca:/Ambience";
+        const string masterKey = "Enan|master", musicKey = "Enan/music", sfxKey = "Enan:sfx", ambiKey = "I just neeed unique names here";
+                        //Hahaha
 		/// <summary>
 		/// File name of saved game
 		/// </summary>
@@ -68,11 +70,11 @@ namespace Core.Data
 		/// </summary>
 		public virtual void SetVolumes(float master, float sfx, float music, float ambi, bool save)
 		{
-			// Early out if no mixer set
-			//if (gameMixer == null)
-			//{
-			//	return;
-			//}
+            // Early out if no mixer set
+            //if (gameMixer == null)
+            //{
+            //	return;
+            //}
 
             // Transform 0-1 into logarithmic -80-0
             //if (masterVolumeParameter != null)
@@ -87,20 +89,31 @@ namespace Core.Data
             //{
             //	gameMixer.SetFloat(musicVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(music)));
             //}
-
+            //string s;
+            //ambiVCA.getPath(out s);
+            //print(s);
             masterBus.setVolume(master);
             sfxVCA.setVolume(sfx);
             musicVCA.setVolume(music);
-            ambienceVCA.setVolume(master);
+            ambiVCA.setVolume(ambi);
 
-			if (save)
-			{
-				// Apply to save data too
-				m_DataStore.masterVolume = master;
-				m_DataStore.sfxVolume = sfx;
-				m_DataStore.musicVolume = music;
-				SaveData();
-			}
+
+            print("Settting volume:");
+            /*
+            print(ambi);
+            /*/
+            float x; ambiVCA.getVolume(out x); print(x);
+            //*/
+            if (save)
+            {
+                print("saving:");
+                print(m_DataStore.ambiVolume);
+                m_DataSaver.Save(m_DataStore);
+                PlayerPrefs.SetFloat(masterKey, master);
+                PlayerPrefs.SetFloat(musicKey, music);
+                PlayerPrefs.SetFloat(sfxKey, sfx);
+                PlayerPrefs.SetFloat(ambiKey, ambi);
+            }
 		}
 
 		/// <summary>
@@ -110,11 +123,12 @@ namespace Core.Data
 		{
 			base.Awake();
 			LoadData();
-
-            masterBus = RuntimeManager.GetBus(masterString);
-            sfxVCA = RuntimeManager.GetVCA(sfxString);
-            musicVCA = RuntimeManager.GetVCA(musicString);
-            ambienceVCA = RuntimeManager.GetVCA(ambienceString);
+            //print("Loading data!");
+            masterBus = RuntimeManager.GetBus(masterBusName);
+            sfxVCA = RuntimeManager.GetVCA(sfxVcaName);
+            musicVCA = RuntimeManager.GetVCA(musicVcaName);
+            ambiVCA = RuntimeManager.GetVCA(ambiVcaName);
+            //SetVolumes(m_DataStore.masterVolume, m_DataStore.sfxVolume, m_DataStore.musicVolume, m_DataStore.ambiVolume, false);
 		}
 
 		/// <summary>
@@ -122,11 +136,11 @@ namespace Core.Data
 		/// </summary>
 		protected virtual void Start()
 		{
-            float x;
-            musicVCA.getVolume(out x);
+            //float x;
+            //musicVCA.getVolume(out x);
             //print(x);
 
-            masterBus.getVolume(out x);
+            //masterBus.getVolume(out x);
             //print(x);
 
             SetVolumes(m_DataStore.masterVolume, m_DataStore.sfxVolume, m_DataStore.musicVolume, m_DataStore.ambiVolume, false);
@@ -148,15 +162,20 @@ namespace Core.Data
 			{
 				if (!m_DataSaver.Load(out m_DataStore))
 				{
-					m_DataStore = new TDataStore();
+                    m_DataStore = new TDataStore();
+                    print(m_DataStore.ambiVolume);
 					SaveData();
 				}
+                else
+                {
+                    SaveData();
+                }
 			}
 			catch (Exception)
 			{
-				Debug.Log("Failed to load data, resetting");
-				m_DataStore = new TDataStore();
-				SaveData();
+				Debug.LogError("Failed to load data, resetting");
+                m_DataStore = new TDataStore();
+                SaveData();
 			}
 		}
 
@@ -166,7 +185,7 @@ namespace Core.Data
 		protected virtual void SaveData()
 		{
 			m_DataSaver.Save(m_DataStore);
-		}
+        }
 
 		/// <summary>
 		/// Transform volume from linear to logarithmic

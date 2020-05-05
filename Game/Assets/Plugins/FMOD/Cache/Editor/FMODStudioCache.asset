@@ -66,7 +66,9 @@ MonoBehaviour:
   Path: event:/Towers themselves/MisssileFlire
   guid: 485167cc34332141bf1f504608b6e8b3
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -89,7 +91,9 @@ MonoBehaviour:
   Path: event:/Badddies/Mired
   guid: 703d6a2d96ecc54da71164c8077126ba
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -170,6 +174,40 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &-8666078718302953067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
+--- !u!114 &-8665420583931699682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 1
 --- !u!114 &-8633942726277895845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +296,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-8236743939232518288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerPlaced/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &-8124104309546590739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +364,23 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &-8033623664412540583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &-8016351693871426087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,7 +414,7 @@ MonoBehaviour:
   Min: 1
   Max: 3
   Default: 1
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7979010448520236153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +447,9 @@ MonoBehaviour:
   Path: event:/UI/StartWave
   guid: 1e84095c94566842a7f4cd1d274ada49
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -383,6 +457,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &-7853553694259894633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &-7842124061479979191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,7 +507,7 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7636655908600885543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +523,9 @@ MonoBehaviour:
   Path: event:/Badddies/Hovertank
   guid: 3c33f4872192844da847fa51409cd90d
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -440,6 +533,23 @@ MonoBehaviour:
   MinDistance: 5
   MaxDistance: 40
   Length: 7924
+--- !u!114 &-7629428864761702129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &-7611668834561949250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,6 +617,23 @@ MonoBehaviour:
   Min: 1
   Max: 3
   Default: 1
+  Exists: 0
+--- !u!114 &-7527872003646800672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
   Exists: 0
 --- !u!114 &-7514721732056875997
 MonoBehaviour:
@@ -609,7 +736,9 @@ MonoBehaviour:
   Path: event:/Towers themselves/TowerHit
   guid: 407bf299b076874d89268f997751fe7a
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -666,7 +795,9 @@ MonoBehaviour:
   Path: event:/Badddies/Hovercopter
   guid: 404236c0c2540a43a8329aa2df0be3f1
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -725,6 +856,41 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-6769655293334867715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637242447294645201
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6647735770204849510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 1
 --- !u!114 &-6573651078832137301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,7 +906,9 @@ MonoBehaviour:
   Path: event:/Badddies/Hoverbugggy
   guid: 4cdbe8d69fb62b459786bab9cde779b6
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -799,6 +967,23 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &-6377024594958278437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &-6349805926564751600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,6 +1035,23 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &-6227119054532058944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &-6220234190631858071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,13 +1084,15 @@ MonoBehaviour:
   Path: event:/Level background/LevelBackground
   guid: bd90c55da9d1be41b20c53d09d5dab09
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -7751946500978088110}
-  - {fileID: 6118184632866844726}
+  - {fileID: 2592303514143443530}
+  - {fileID: -5181375220927603749}
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
@@ -926,6 +1130,40 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &-6100345783589398278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
+--- !u!114 &-6058241185192771423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
 --- !u!114 &-6046244967502488053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -942,6 +1180,24 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 10
+  Exists: 1
+--- !u!114 &-6043867217542684875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637242447294645201
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &-5848874306208097650
 MonoBehaviour:
@@ -976,6 +1232,23 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 10
+  Exists: 0
+--- !u!114 &-5748082300947047623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
   Exists: 0
 --- !u!114 &-5742849344768634761
 MonoBehaviour:
@@ -1077,7 +1350,9 @@ MonoBehaviour:
   Path: event:/Alll your base/EnemyChargeAtBase
   guid: 99875dd72bbb5649adbecbd691c0f25a
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1185,7 +1460,9 @@ MonoBehaviour:
   Path: event:/LevelUI/EnergyGain
   guid: 37c69c0069876f45b659c914ed81748e
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1227,6 +1504,23 @@ MonoBehaviour:
   lastModified: 637229700961131617
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &-5181375220927603749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
   Exists: 1
 --- !u!114 &-5133319563946377266
 MonoBehaviour:
@@ -1313,7 +1607,7 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4712324601184991149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1366,6 +1660,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-4598645866684280639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 1
 --- !u!114 &-4542737545296991309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,12 +1727,14 @@ MonoBehaviour:
   Path: event:/Alll your base/BaseAmbience
   guid: 70077dba903c404ba69f8a97898c6c44
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 2041487792179264664}
+  - {fileID: -4598645866684280639}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -1509,7 +1822,9 @@ MonoBehaviour:
   Path: event:/Towers themselves/MisssileImpact
   guid: 5cba1fe5642ae24a956d8c08e6982356
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1603,6 +1918,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3948228804977676171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &-3919261928562591393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1637,6 +1969,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-3820777385500030407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &-3692593391975898428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,6 +2003,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-3651711707193394793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &-3565883568749844267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1669,7 +2035,9 @@ MonoBehaviour:
   Path: event:/Towers themselves/PylonDidAThing
   guid: 2c6ad110b2631147ac660a924d9fd5fc
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1747,6 +2115,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3321853275641504308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
 --- !u!114 &-3312556256132535246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,6 +2161,40 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
+--- !u!114 &-3264247528717146956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
+--- !u!114 &-3237037681432774595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerPlaced/TowerLevel
   m_EditorClassIdentifier: 
   Name: TowerLevel
   Min: 1
@@ -1815,12 +2234,14 @@ MonoBehaviour:
   Path: event:/LevelUI/TowerPlaced
   guid: d7ec4c438c9c2f4ba7c0fff67fc5ec81
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -8006527668567878778}
+  - {fileID: -2864896290404756846}
   MinDistance: 5
   MaxDistance: 35
   Length: 1803
@@ -1909,6 +2330,23 @@ MonoBehaviour:
   Max: 4
   Default: 1
   Exists: 0
+--- !u!114 &-2864896290404756846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerPlaced/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 1
 --- !u!114 &-2856764928157081455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2013,6 +2451,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-2621184942079691021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerPlaced/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &-2551058811146157798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2100,6 +2555,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-2420185129171498356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
 --- !u!114 &-2416799195419919616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2115,7 +2587,9 @@ MonoBehaviour:
   Path: event:/Level background/Thunder
   guid: 771616210b9e5548bc67cd30628d7310
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2123,6 +2597,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3212
+--- !u!114 &-2415044654009015310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &-2380079299219440887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2174,6 +2665,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-2045285254633735962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &-2040752601166857835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2191,6 +2699,23 @@ MonoBehaviour:
   Max: 4
   Default: 1
   Exists: 0
+--- !u!114 &-2017716320341401464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
 --- !u!114 &-1949970823065239100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2206,7 +2731,9 @@ MonoBehaviour:
   Path: event:/Towers themselves/RocketImpact
   guid: de573a5715f84e429a604e09a535d1d7
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2333,6 +2860,24 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &-1603924523545769849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637242447294645201
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-1598051680452479941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2348,7 +2893,9 @@ MonoBehaviour:
   Path: event:/UI/MouseClick
   guid: 66dff8c4531b724b9fa1642731435d7d
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2371,6 +2918,23 @@ MonoBehaviour:
   Name: TowerLevel
   Min: 1
   Max: 4
+  Default: 1
+  Exists: 0
+--- !u!114 &-1520048710494698145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerPlaced/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
   Default: 1
   Exists: 0
 --- !u!114 &-1510118025524317295
@@ -2441,6 +3005,40 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-1224402807704333692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &-1084333634293436143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 1
 --- !u!114 &-1074634517871321761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2543,6 +3141,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &-649427636021172581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &-649014020382650041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2612,6 +3227,23 @@ MonoBehaviour:
   Max: 3
   Default: 1
   Exists: 0
+--- !u!114 &-466808095972890496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerIdle/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &-322673609870613262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2646,6 +3278,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 1
+--- !u!114 &-247194654934281734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2660,7 +3309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 9130901232007907136}
-  - {fileID: 5707239041887780800}
+  - {fileID: 7699950779918469423}
   EditorEvents:
   - {fileID: 1337971551909787485}
   - {fileID: 5993733752566435403}
@@ -2692,10 +3341,10 @@ MonoBehaviour:
   - {fileID: -4346436599792312768}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5707239041887780800}
+  - {fileID: 7699950779918469423}
   StringsBanks:
   - {fileID: 9130901232007907136}
-  stringsBankWriteTime: 637236706648267991
+  stringsBankWriteTime: 637242458470186207
   cacheVersion: 3
 --- !u!114 &9185513858229779
 MonoBehaviour:
@@ -2747,7 +3396,7 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 10
-  Exists: 1
+  Exists: 0
 --- !u!114 &81344873620863956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2793,6 +3442,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
+--- !u!114 &228338021463607064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Health
   m_EditorClassIdentifier: 
   Name: Health
   Min: 0
@@ -2918,6 +3584,24 @@ MonoBehaviour:
   Max: 3
   Default: 1
   Exists: 0
+--- !u!114 &523719630933463386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637240418338767308
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &557765035984089369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2987,6 +3671,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &602057855885160246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerPlaced/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &702266923211347765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3053,7 +3754,9 @@ MonoBehaviour:
   Path: event:/Alll your base/BaseHit
   guid: f1f4466ed147c94ca34555614eac803a
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3078,6 +3781,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &805122737713673169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &813386365539847441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3095,6 +3815,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &843531875029730377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 1
 --- !u!114 &924286751532373458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3181,6 +3918,23 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &1111057081862894254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 1
 --- !u!114 &1132687872850475390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3249,7 +4003,9 @@ MonoBehaviour:
   Path: event:/UI/Mouseover
   guid: a0beaef9e8d2624f9ea3a6e52aa2a700
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3272,13 +4028,15 @@ MonoBehaviour:
   Path: event:/Level background/BGM
   guid: 1163832f4f628a4bb91e6efc99f0aad9
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 57900153556250957}
-  - {fileID: -4807246904961055548}
+  - {fileID: 8415517687571844930}
+  - {fileID: 4783386407347041538}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -3386,6 +4144,23 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 1
+--- !u!114 &1717824048021442153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &1850166534153002745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3436,7 +4211,7 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 10
-  Exists: 1
+  Exists: 0
 --- !u!114 &2053940718361338648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3448,6 +4223,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &2113752943244658587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
   m_EditorClassIdentifier: 
   Name: Danger
   Min: 0
@@ -3557,14 +4349,16 @@ MonoBehaviour:
   Path: event:/Towers themselves/Cannnonfire
   guid: 9e405f935cf62d4eb239a2ba4331909f
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 5
   MaxDistance: 60
-  Length: 300
+  Length: 482
 --- !u!114 &2576433387587551655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3582,6 +4376,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &2592303514143443530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
 --- !u!114 &2603316588132164401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3593,6 +4404,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/BGM/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
+--- !u!114 &2676018659644895675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Health
   m_EditorClassIdentifier: 
   Name: Health
   Min: 0
@@ -3684,6 +4512,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &3031124113854268177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 1
 --- !u!114 &3095390922727954681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3719,6 +4564,40 @@ MonoBehaviour:
   Max: 3
   Default: 1
   Exists: 0
+--- !u!114 &3227235379376492958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &3285171643141140384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerPlaced/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &3303408166383347762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3736,6 +4615,41 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &3349228988428242335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637242446358570271
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &3390623685943216609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
 --- !u!114 &3418479993237756662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3768,7 +4682,9 @@ MonoBehaviour:
   Path: event:/Towers themselves/IndexOutOfBounds
   guid: f4f3788ca0de60478e15caa44a6efec2
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3825,7 +4741,9 @@ MonoBehaviour:
   Path: event:/LevelUI/TowerSold
   guid: 36e5c51b68ce8a4a94583a883e7df177
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3849,6 +4767,23 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 0
+  Exists: 0
+--- !u!114 &3826699938176392377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
   Exists: 0
 --- !u!114 &3858871141611009969
 MonoBehaviour:
@@ -3954,6 +4889,23 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &4323983206922220420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 1
 --- !u!114 &4398548961022986514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3988,6 +4940,24 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &4404811955699747205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637240421352353513
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4412209334853187686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4003,7 +4973,9 @@ MonoBehaviour:
   Path: event:/Towers themselves/PlasmaShot
   guid: 6baec996a7380c46a6241750a04a59da
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4062,6 +5034,23 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &4783386407347041538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 1
 --- !u!114 &4820290806443654602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4077,12 +5066,14 @@ MonoBehaviour:
   Path: event:/Level background/LevelAmbience
   guid: cc0a18f289e86a43a85fc171207c1e84
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 6900446824936045749}
+  - {fileID: 3031124113854268177}
   MinDistance: 0
   MaxDistance: 0
   Length: 80138
@@ -4149,6 +5140,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
+--- !u!114 &5189296786659978553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Health
   m_EditorClassIdentifier: 
   Name: Health
   Min: 0
@@ -4257,6 +5265,40 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &5392435420158307857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &5520958044830456277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
 --- !u!114 &5606550521565125870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4273,6 +5315,23 @@ MonoBehaviour:
   Min: 1
   Max: 3
   Default: 1
+  Exists: 0
+--- !u!114 &5659111975310220591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
   Exists: 0
 --- !u!114 &5707239041887780800
 MonoBehaviour:
@@ -4291,7 +5350,7 @@ MonoBehaviour:
   lastModified: 637236706648058549
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &5710114202912542869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4307,7 +5366,9 @@ MonoBehaviour:
   Path: event:/UI/BackButtton
   guid: 6e64004a1b5a0c42a55bfa8fc81613d9
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4381,12 +5442,14 @@ MonoBehaviour:
   Path: event:/Towers themselves/TowerIdle
   guid: 1b0c35f14cdc014f8f7651f1a054a678
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: -3277316657383213657}
+  - {fileID: -6647735770204849510}
   MinDistance: 1.8000001
   MaxDistance: 60
   Length: 8272
@@ -4423,7 +5486,7 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 10
-  Exists: 1
+  Exists: 0
 --- !u!114 &6122310005085243359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4633,7 +5696,7 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 10
-  Exists: 1
+  Exists: 0
 --- !u!114 &6943173290776681710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4690,6 +5753,40 @@ MonoBehaviour:
   MinDistance: 5
   MaxDistance: 35
   Length: 0
+--- !u!114 &6990117640269631735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
+--- !u!114 &7021836624185884494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &7173977327888731987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4758,6 +5855,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 0
+--- !u!114 &7450097232225481483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BaseAmbience/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &7488934444257874760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4810,6 +5924,23 @@ MonoBehaviour:
   Max: 10
   Default: 10
   Exists: 0
+--- !u!114 &7634852429633161936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &7659238099862916950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4827,6 +5958,24 @@ MonoBehaviour:
   Max: 4
   Default: 1
   Exists: 0
+--- !u!114 &7699950779918469423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637242458469966792
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &7720568214556386840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4842,7 +5991,9 @@ MonoBehaviour:
   Path: event:/Towers themselves/RocketFire
   guid: d6afd9ef0b41a4498dd61f3e916a9fa3
   Banks:
-  - {fileID: 5707239041887780800}
+  - {fileID: -6769655293334867715}
+  - {fileID: -6043867217542684875}
+  - {fileID: 7699950779918469423}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4918,6 +6069,23 @@ MonoBehaviour:
   Max: 3
   Default: 1
   Exists: 1
+--- !u!114 &7919455899734709467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &8031875377594830579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4986,6 +6154,23 @@ MonoBehaviour:
   Max: 10
   Default: 0
   Exists: 1
+--- !u!114 &8175973112371555220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TowerPlaced/TowerLevel
+  m_EditorClassIdentifier: 
+  Name: TowerLevel
+  Min: 1
+  Max: 3
+  Default: 1
+  Exists: 0
 --- !u!114 &8210801945084875758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5037,7 +6222,58 @@ MonoBehaviour:
   Max: 4
   Default: 1
   Exists: 0
+--- !u!114 &8303937681023396615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &8373145287431765587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 0
 --- !u!114 &8414014886622936986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Health
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 10
+  Default: 10
+  Exists: 1
+--- !u!114 &8415517687571844930
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5121,6 +6357,41 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 10
+  Exists: 0
+--- !u!114 &8544999415079900247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BGM/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
+  Exists: 0
+--- !u!114 &8695918113241001701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637240421435106827
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &8740060604952983415
 MonoBehaviour:
@@ -5206,6 +6477,23 @@ MonoBehaviour:
   Min: 0
   Max: 10
   Default: 10
+  Exists: 1
+--- !u!114 &8825484172157342953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelBackground/Danger
+  m_EditorClassIdentifier: 
+  Name: Danger
+  Min: 0
+  Max: 10
+  Default: 0
   Exists: 1
 --- !u!114 &8874415128269029258
 MonoBehaviour:
@@ -5340,7 +6628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637236706648267991
+  lastModified: 637242458470186207
   LoadResult: 0
   FileSizes:
   - Name: Desktop

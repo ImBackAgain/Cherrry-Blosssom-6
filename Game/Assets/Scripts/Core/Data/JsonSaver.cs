@@ -23,6 +23,7 @@ namespace Core.Data
 			using (StreamWriter writer = GetWriteStream())
 			{
 				writer.Write(json);
+                //Debug.Log(writer);
 			}
 		}
 

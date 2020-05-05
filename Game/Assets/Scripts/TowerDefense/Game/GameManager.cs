@@ -22,6 +22,7 @@ namespace TowerDefense.Game
 		protected override void Awake()
 		{
 			Screen.sleepTimeout = SleepTimeout.NeverSleep;
+            //print("Awake!");
 			base.Awake();
 		}
 
