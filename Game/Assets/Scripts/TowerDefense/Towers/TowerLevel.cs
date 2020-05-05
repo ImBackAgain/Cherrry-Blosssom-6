@@ -13,6 +13,7 @@ namespace TowerDefense.Towers
 	[DisallowMultipleComponent]
 	public class TowerLevel : MonoBehaviour, ISerializationCallbackReceiver
 	{
+        public FMODUnity.StudioEventEmitter selllEvent, deathEvent;
 		/// <summary>
 		/// The prefab for communicating placement in the scene
 		/// </summary>
@@ -172,6 +173,7 @@ namespace TowerDefense.Towers
 
 		public void Kill()
 		{
+            //print("Towerkilll");
 			m_ParentTower.KillTower();
 		}
 

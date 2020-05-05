@@ -668,6 +668,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5d8e55681884ffb9fb6ed0b6f18f0bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selllEvent: {fileID: 0}
+  deathEvent: {fileID: 0}
   towerGhostPrefab: {fileID: 114265946380979806, guid: def5a1fc3ea59439fa8023749f7a160f,
     type: 3}
   buildEffectPrefab: {fileID: 1395313577031670, guid: c559c1920b5d04e6d83aa4464fba5c68,
@@ -686,7 +688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Towers themselves/TowerIdle
+  Event: event:/Towers themselves/TowerBuild
   PlayEvent: 11
   StopEvent: 12
   AllowFadeout: 1

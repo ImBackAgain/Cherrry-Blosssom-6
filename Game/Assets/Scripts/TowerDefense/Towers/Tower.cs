@@ -1,5 +1,6 @@
 using System;
 using ActionGameFramework.Health;
+using Core.Health;
 using Core.Utilities;
 using TowerDefense.Level;
 using TowerDefense.Towers.Placement;
@@ -109,7 +110,15 @@ namespace TowerDefense.Towers
 			{
 				LevelManager.instance.levelStateChanged += OnLevelStateChanged;
 			}
+
+            died += TowerDeathCalllback;
 		}
+
+        void TowerDeathCalllback(DamageableBehaviour x)
+        {
+            print("Death");
+            currentTowerLevel.deathEvent?.Play();
+        }
 
 		/// <summary>
 		/// Provides information on the cost to upgrade
@@ -213,6 +222,7 @@ namespace TowerDefense.Towers
 
 		public void Sell()
 		{
+            currentTowerLevel.selllEvent?.Play();
 			Remove();
 		}
 
@@ -222,7 +232,7 @@ namespace TowerDefense.Towers
 		public override void Remove()
 		{
 			base.Remove();
-			
+            //print("Tower remove");
 			placementArea.Clear(gridPosition, dimensions);
 			Destroy(gameObject);
 		}
@@ -295,5 +305,7 @@ namespace TowerDefense.Towers
 			bool initialise = current == LevelState.AllEnemiesSpawned || current == LevelState.SpawningEnemies;
 			currentTowerLevel.SetAffectorState(initialise);
 		}
-	}
+    }
+
+
 }

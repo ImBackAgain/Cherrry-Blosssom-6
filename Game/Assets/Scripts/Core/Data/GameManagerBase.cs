@@ -19,6 +19,7 @@ namespace Core.Data
         const string masterBusName = "Bus:/", musicVcaName = "vca:/Music", sfxVcaName = "vca:/SFX", ambiVcaName = "vca:/Ambience";
         const string masterKey = "Enan|master", musicKey = "Enan/music", sfxKey = "Enan:sfx", ambiKey = "I just neeed unique names here";
                         //Hahaha
+
 		/// <summary>
 		/// File name of saved game
 		/// </summary>
@@ -58,61 +59,39 @@ namespace Core.Data
 		/// Retrieve volumes from data store
 		/// </summary>
 		public virtual void GetVolumes(out float master, out float sfx, out float music, out float ambi)
-		{
-			master = m_DataStore.masterVolume;
-			sfx = m_DataStore.sfxVolume;
-			music = m_DataStore.musicVolume;
-            ambi = m_DataStore.ambiVolume;
-		}
+        {
+            master = PlayerPrefs.GetFloat(masterKey, 1);
+            music = PlayerPrefs.GetFloat(musicKey, 1);
+            sfx = PlayerPrefs.GetFloat(sfxKey, 1);
+            ambi = PlayerPrefs.GetFloat(ambiKey, 1);
+        }
 
 		/// <summary>
 		/// Set and persist game volumes
 		/// </summary>
 		public virtual void SetVolumes(float master, float sfx, float music, float ambi, bool save)
 		{
-            // Early out if no mixer set
-            //if (gameMixer == null)
-            //{
-            //	return;
-            //}
-
-            // Transform 0-1 into logarithmic -80-0
-            //if (masterVolumeParameter != null)
-            //{
-            //	gameMixer.SetFloat(masterVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(master)));
-            //}
-            //if (sfxVolumeParameter != null)
-            //{
-            //	gameMixer.SetFloat(sfxVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(sfx)));
-            //}
-            //if (musicVolumeParameter != null)
-            //{
-            //	gameMixer.SetFloat(musicVolumeParameter, LogarithmicDbTransform(Mathf.Clamp01(music)));
-            //}
-            //string s;
-            //ambiVCA.getPath(out s);
-            //print(s);
             masterBus.setVolume(master);
             sfxVCA.setVolume(sfx);
             musicVCA.setVolume(music);
             ambiVCA.setVolume(ambi);
 
 
-            print("Settting volume:");
-            /*
-            print(ambi);
-            /*/
-            float x; ambiVCA.getVolume(out x); print(x);
+            //print("Settting volume:");
+            //*
+            //print(ambi);
+            //*/
+            //float x; ambiVCA.getVolume(out x); print(x);
             //*/
             if (save)
             {
                 print("saving:");
-                print(m_DataStore.ambiVolume);
-                m_DataSaver.Save(m_DataStore);
                 PlayerPrefs.SetFloat(masterKey, master);
                 PlayerPrefs.SetFloat(musicKey, music);
                 PlayerPrefs.SetFloat(sfxKey, sfx);
                 PlayerPrefs.SetFloat(ambiKey, ambi);
+
+                print(PlayerPrefs.GetFloat(ambiKey));
             }
 		}
 
@@ -143,7 +122,11 @@ namespace Core.Data
             //masterBus.getVolume(out x);
             //print(x);
 
-            SetVolumes(m_DataStore.masterVolume, m_DataStore.sfxVolume, m_DataStore.musicVolume, m_DataStore.ambiVolume, false);
+            float masterVol, musicVol, sfxVol, ambiVol;
+
+            GetVolumes(out masterVol, out sfxVol, out musicVol, out ambiVol);
+
+            SetVolumes(masterVol, sfxVol, musicVol, ambiVol, false);
 		}
 
 		/// <summary>
@@ -163,7 +146,6 @@ namespace Core.Data
 				if (!m_DataSaver.Load(out m_DataStore))
 				{
                     m_DataStore = new TDataStore();
-                    print(m_DataStore.ambiVolume);
 					SaveData();
 				}
                 else

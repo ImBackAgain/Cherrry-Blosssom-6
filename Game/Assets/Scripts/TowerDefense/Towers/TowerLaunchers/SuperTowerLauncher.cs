@@ -135,10 +135,10 @@ namespace TowerDefense.Towers.TowerLaunchers
 			m_LifeTimer.Tick(Time.deltaTime);
             if(!played && m_LifeTimer.TimeLeft < 2)
             {
-                print(m_LifeTimer.TimeLeft);
+                //print(m_LifeTimer.TimeLeft);
                 played = true;
                 sep?.Play();
-                print("playing now");
+                //print("playing now");
             }
 		}
 

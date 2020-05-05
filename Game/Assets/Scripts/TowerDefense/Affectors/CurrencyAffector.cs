@@ -72,7 +72,7 @@ namespace TowerDefense.Affectors
 		{
 			if (audioSource != null)
 			{
-				audioSource.Play();
+				//audioSource.Play();
 			}
 			if (currencyParticleSystem != null)
 			{

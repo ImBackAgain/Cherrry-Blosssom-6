@@ -32,5 +32,9 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{9a188364-6014-4a16-bdc0-58f7e42c1a41}" />
-	<object class="LoudnessMeter" id="{ca96c518-2c01-47a2-9e17-451d31859325}" />
+	<object class="LoudnessMeter" id="{ca96c518-2c01-47a2-9e17-451d31859325}">
+		<property name="loudnessTarget">
+			<value>-17</value>
+		</property>
+	</object>
 </objects>
